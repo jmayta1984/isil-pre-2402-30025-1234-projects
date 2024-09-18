@@ -14,6 +14,7 @@
 		FBE608302C9B475400FE195C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE6082F2C9B475400FE195C /* Assets.xcassets */; };
 		FBE608332C9B475400FE195C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE608312C9B475400FE195C /* LaunchScreen.storyboard */; };
 		FBE6083B2C9B4C6C00FE195C /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE6083A2C9B4C6C00FE195C /* TaskListViewController.swift */; };
+		FBE6083D2C9B5FDC00FE195C /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE6083C2C9B5FDC00FE195C /* TaskDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FBE608322C9B475400FE195C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBE608342C9B475400FE195C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBE6083A2C9B4C6C00FE195C /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		FBE6083C2C9B5FDC00FE195C /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				FBE608312C9B475400FE195C /* LaunchScreen.storyboard */,
 				FBE608342C9B475400FE195C /* Info.plist */,
 				FBE6083A2C9B4C6C00FE195C /* TaskListViewController.swift */,
+				FBE6083C2C9B5FDC00FE195C /* TaskDetailViewController.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				FBE6083B2C9B4C6C00FE195C /* TaskListViewController.swift in Sources */,
 				FBE608272C9B475300FE195C /* AppDelegate.swift in Sources */,
 				FBE608292C9B475300FE195C /* SceneDelegate.swift in Sources */,
+				FBE6083D2C9B5FDC00FE195C /* TaskDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
