@@ -14,6 +14,8 @@
 		FB3DCCD92CA4A00F0073089C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3DCCD72CA4A00F0073089C /* LaunchScreen.storyboard */; };
 		FB3DCCE32CA4A9030073089C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3DCCE22CA4A9030073089C /* Product.swift */; };
 		FB3DCCE52CA4AA070073089C /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3DCCE42CA4AA070073089C /* ProductViewController.swift */; };
+		FBF1F1382CADBF6F00CC4BFB /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF1F1372CADBF6F00CC4BFB /* ProductListViewController.swift */; };
+		FBF1F13A2CADC1B500CC4BFB /* ProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF1F1392CADC1B500CC4BFB /* ProductViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		FB3DCCDA2CA4A00F0073089C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB3DCCE22CA4A9030073089C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		FB3DCCE42CA4AA070073089C /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		FBF1F1372CADBF6F00CC4BFB /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		FBF1F1392CADC1B500CC4BFB /* ProductViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				FB3DCCE42CA4AA070073089C /* ProductViewController.swift */,
+				FBF1F1372CADBF6F00CC4BFB /* ProductListViewController.swift */,
+				FBF1F1392CADC1B500CC4BFB /* ProductViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,6 +165,8 @@
 			files = (
 				FB3DCCE32CA4A9030073089C /* Product.swift in Sources */,
 				FB3DCCCD2CA4A00D0073089C /* AppDelegate.swift in Sources */,
+				FBF1F13A2CADC1B500CC4BFB /* ProductViewCell.swift in Sources */,
+				FBF1F1382CADBF6F00CC4BFB /* ProductListViewController.swift in Sources */,
 				FB3DCCE52CA4AA070073089C /* ProductViewController.swift in Sources */,
 				FB3DCCCF2CA4A00D0073089C /* SceneDelegate.swift in Sources */,
 			);
