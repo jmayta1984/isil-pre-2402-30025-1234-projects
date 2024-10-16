@@ -9,7 +9,7 @@ import Foundation
 
 typealias Heroes = [Hero]
 
-struct Hero: Decodable {
+struct Hero: Decodable, Identifiable {
     let id: String
     let name: String
     let biography: Biography
@@ -28,7 +28,7 @@ struct HeroImage: Decodable {
     let url: String
 }
 
-struct HerosWrapper: Decodable {
+struct HeroesWrapper: Decodable {
     let heroes: Heroes
     
     enum CodingKeys: String, CodingKey {

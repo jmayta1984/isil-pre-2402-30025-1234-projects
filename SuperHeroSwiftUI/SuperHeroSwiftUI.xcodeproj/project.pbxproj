@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1D44222CC030E9002011D3 /* HeroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D44212CC030E9002011D3 /* HeroService.swift */; };
+		FB1D44252CC03553002011D3 /* HeroSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D44242CC03553002011D3 /* HeroSearchView.swift */; };
 		FB2CC9C62CB719E000228074 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CC9C52CB719E000228074 /* Hero.swift */; };
 		FB2CC9C82CB71E2E00228074 /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CC9C72CB71E2E00228074 /* HttpRequestHelper.swift */; };
 		FB8809C82CB7187300645A1C /* SuperHeroSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8809C72CB7187300645A1C /* SuperHeroSwiftUIApp.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB1D44212CC030E9002011D3 /* HeroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroService.swift; sourceTree = "<group>"; };
+		FB1D44242CC03553002011D3 /* HeroSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroSearchView.swift; sourceTree = "<group>"; };
 		FB2CC9C52CB719E000228074 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		FB2CC9C72CB71E2E00228074 /* HttpRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
 		FB8809C42CB7187300645A1C /* SuperHeroSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperHeroSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +40,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB1D44202CC030DC002011D3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FB1D44212CC030E9002011D3 /* HeroService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FB1D44232CC03524002011D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB1D44242CC03553002011D3 /* HeroSearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FB8809BB2CB7187300645A1C = {
 			isa = PBXGroup;
 			children = (
@@ -55,14 +75,13 @@
 		FB8809C62CB7187300645A1C /* SuperHeroSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FB1D44232CC03524002011D3 /* View */,
+				FB1D44202CC030DC002011D3 /* Service */,
 				FB8809D92CB7199200645A1C /* Helper */,
-				FB8809D82CB7198200645A1C /* Service */,
-				FB8809D72CB718D500645A1C /* View */,
-				FB8809D62CB718CF00645A1C /* ViewModel */,
 				FB8809D52CB718C600645A1C /* Model */,
 				FB8809C72CB7187300645A1C /* SuperHeroSwiftUIApp.swift */,
-				FB8809C92CB7187300645A1C /* ContentView.swift */,
 				FB8809CB2CB7187500645A1C /* Assets.xcassets */,
+				FB8809C92CB7187300645A1C /* ContentView.swift */,
 				FB8809CD2CB7187500645A1C /* Preview Content */,
 			);
 			path = SuperHeroSwiftUI;
@@ -82,27 +101,6 @@
 				FB2CC9C52CB719E000228074 /* Hero.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		FB8809D62CB718CF00645A1C /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		FB8809D72CB718D500645A1C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		FB8809D82CB7198200645A1C /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		FB8809D92CB7199200645A1C /* Helper */ = {
@@ -183,7 +181,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB1D44252CC03553002011D3 /* HeroSearchView.swift in Sources */,
 				FB8809CA2CB7187300645A1C /* ContentView.swift in Sources */,
+				FB1D44222CC030E9002011D3 /* HeroService.swift in Sources */,
 				FB8809C82CB7187300645A1C /* SuperHeroSwiftUIApp.swift in Sources */,
 				FB2CC9C62CB719E000228074 /* Hero.swift in Sources */,
 				FB2CC9C82CB71E2E00228074 /* HttpRequestHelper.swift in Sources */,

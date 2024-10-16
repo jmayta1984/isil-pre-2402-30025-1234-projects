@@ -9,7 +9,7 @@ import Foundation
 
 class HttpRequestHelper{
     
-    func GET(url: String, completion: @escaping (Bool, Data?, String? ) -> Void ) {
+    func GET(url: String, completion:  @escaping (Bool, Data?, String? ) -> Void ) {
         
         guard let url = URL(string: url) else { return }
         
