@@ -18,7 +18,7 @@ struct LoginView: View {
             Text("Rick and Morty")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-            TextField("Username", text: $username).padding().background(Color.gray.opacity(0.2)).cornerRadius(10)
+            TextField("Username", text: $username).textInputAutocapitalization(.never).padding().background(Color.gray.opacity(0.2)).cornerRadius(10).autocorrectionDisabled()
             HStack {
                 if isPasswordVisible {
                     TextField("Password", text: $password)
@@ -30,9 +30,21 @@ struct LoginView: View {
                 }, label: {
                     Image(systemName: isPasswordVisible ? "eye.slash" : "eye").foregroundColor(Color.gray)
                 })
-            }.padding().background(Color.gray.opacity(0.2)).cornerRadius(10)
+            }.textInputAutocapitalization(.never).padding().background(Color.gray.opacity(0.2)).cornerRadius(10)
             
-            Button(action: {}, label: {
+            Button(action: {
+                AuthService().login(username: username, password: password) { data, message in
+                    if let data = data {
+                        print(data.firstName)
+                        print(data.lastName)
+                    }
+                    
+                    if let message = message {
+                        print(message)
+                    }
+                }
+                
+            }, label: {
                 Text("Login").frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(10)
             })
             

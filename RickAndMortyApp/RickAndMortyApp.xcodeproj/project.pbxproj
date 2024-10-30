@@ -15,6 +15,9 @@
 		FBF22AFB2CD2AE9300363093 /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF22AFA2CD2AE9300363093 /* HttpRequestHelper.swift */; };
 		FBF22AFD2CD2AEE000363093 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF22AFC2CD2AEE000363093 /* LoginRequest.swift */; };
 		FBF22AFF2CD2AEEC00363093 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF22AFE2CD2AEEC00363093 /* LoginResponse.swift */; };
+		FBF22B012CD2C34300363093 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF22B002CD2C34300363093 /* AuthService.swift */; };
+		FBF22B032CD2D30D00363093 /* CharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF22B022CD2D30D00363093 /* CharactersResponse.swift */; };
+		FBF22B052CD2D38400363093 /* CharactersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF22B042CD2D38400363093 /* CharactersService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		FBF22AFA2CD2AE9300363093 /* HttpRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
 		FBF22AFC2CD2AEE000363093 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		FBF22AFE2CD2AEEC00363093 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		FBF22B002CD2C34300363093 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		FBF22B022CD2D30D00363093 /* CharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersResponse.swift; sourceTree = "<group>"; };
+		FBF22B042CD2D38400363093 /* CharactersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,9 @@
 			children = (
 				FBF22AFC2CD2AEE000363093 /* LoginRequest.swift */,
 				FBF22AFE2CD2AEEC00363093 /* LoginResponse.swift */,
+				FBF22B002CD2C34300363093 /* AuthService.swift */,
+				FBF22B022CD2D30D00363093 /* CharactersResponse.swift */,
+				FBF22B042CD2D38400363093 /* CharactersService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -191,10 +200,13 @@
 			files = (
 				FBF22AF92CD2A5B300363093 /* LoginView.swift in Sources */,
 				FBF22AE82CD2A52000363093 /* ContentView.swift in Sources */,
+				FBF22B032CD2D30D00363093 /* CharactersResponse.swift in Sources */,
 				FBF22AFF2CD2AEEC00363093 /* LoginResponse.swift in Sources */,
 				FBF22AE62CD2A52000363093 /* RickAndMortyAppApp.swift in Sources */,
 				FBF22AFD2CD2AEE000363093 /* LoginRequest.swift in Sources */,
 				FBF22AFB2CD2AE9300363093 /* HttpRequestHelper.swift in Sources */,
+				FBF22B052CD2D38400363093 /* CharactersService.swift in Sources */,
+				FBF22B012CD2C34300363093 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
