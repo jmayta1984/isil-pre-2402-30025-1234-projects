@@ -12,6 +12,7 @@ struct CharactersResponse: Decodable {
     let results: [Character]
 }
 
-struct Character: Decodable {
+struct Character: Identifiable, Decodable {
+    let id: Int
     let name: String
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBE7DEB72CDBE175003137D5 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE7DEB62CDBE175003137D5 /* CharacterListView.swift */; };
 		FBF22AE62CD2A52000363093 /* RickAndMortyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF22AE52CD2A52000363093 /* RickAndMortyAppApp.swift */; };
 		FBF22AE82CD2A52000363093 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF22AE72CD2A52000363093 /* ContentView.swift */; };
 		FBF22AEA2CD2A52100363093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF22AE92CD2A52100363093 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FBE7DEB62CDBE175003137D5 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
 		FBF22AE22CD2A52000363093 /* RickAndMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF22AE52CD2A52000363093 /* RickAndMortyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppApp.swift; sourceTree = "<group>"; };
 		FBF22AE72CD2A52000363093 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				FBF22AF82CD2A5B300363093 /* LoginView.swift */,
+				FBE7DEB62CDBE175003137D5 /* CharacterListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			files = (
 				FBF22AF92CD2A5B300363093 /* LoginView.swift in Sources */,
 				FBF22AE82CD2A52000363093 /* ContentView.swift in Sources */,
+				FBE7DEB72CDBE175003137D5 /* CharacterListView.swift in Sources */,
 				FBF22B032CD2D30D00363093 /* CharactersResponse.swift in Sources */,
 				FBF22AFF2CD2AEEC00363093 /* LoginResponse.swift in Sources */,
 				FBF22AE62CD2A52000363093 /* RickAndMortyAppApp.swift in Sources */,
