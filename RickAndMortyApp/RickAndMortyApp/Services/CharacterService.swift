@@ -17,7 +17,11 @@ class CharacterService {
                 guard let data = data else { return }
                 do {
                     let charactersResponse = try JSONDecoder().decode(CharactersResponse.self, from: data)
-                    completion(charactersResponse.results, nil)
+                    let charactersDto = charactersResponse.results
+                    let characters = charactersDto.map { characterDto in
+                        characterDto.toCharacter()
+                    }
+                    completion(characters, nil)
                 } catch let error {
                     completion(nil, "Error: \(error.localizedDescription)")
                 }
