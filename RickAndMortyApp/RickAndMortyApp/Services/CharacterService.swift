@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CharactersService {
+class CharacterService {
     
     func getAllCharacters(completion: @escaping ([Character]?, String?) -> Void) {
         let url = "https://rickandmortyapi.com/api/character"
