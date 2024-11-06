@@ -30,4 +30,22 @@ class CharacterService {
             }
         }
     }
+    
+    func getCharacterById(url: String, completion: @escaping( Character?, String?) -> Void ) {
+        
+        HttpRequestHelper().GET(url: url) { success, data, message in
+            if (success) {
+                guard let data = data else { return }
+                do {
+                    let characterDto = try JSONDecoder().decode(CharacterDto.self, from: data)
+                    let character = characterDto.toCharacter()
+                    completion(character, nil)
+                } catch let error {
+                    completion(nil, "Error: \(error.localizedDescription)")
+                }
+            } else {
+                completion(nil, "Error: \(message ?? "no response")")
+            }
+        }
+    }
 }

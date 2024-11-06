@@ -9,8 +9,8 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State var username: String = "emilys"
-    @State var password: String = "emilyspass"
+    @State var username: String = ""
+    @State var password: String = ""
     @State var isPasswordVisible: Bool = false
     @State var isLoggedIn: Bool = false
     @State var showAlert: Bool = false
@@ -57,6 +57,9 @@ struct LoginView: View {
                 Alert(title: Text("Login failed "), message: Text("Wrong credentials"), dismissButton: .default(Text("OK")))
             }
             .padding()
+            .navigationDestination(isPresented: $isLoggedIn) {
+                HomeView()
+            }
         }
         
     }
