@@ -13,8 +13,12 @@ struct ContactListView: View {
     @State var name: String = ""
     @State var company: String = ""
     @State var phone: String = ""
+    @State var isAdding: Bool = true
+    @State var contact: Contact?
     
     var body: some View {
+        
+      
         VStack {
             
             Spacer()
@@ -24,16 +28,41 @@ struct ContactListView: View {
             TextField("Phone", text: $phone).padding().background(Color.gray.opacity(0.2)).cornerRadius(10)
             
             Button(action: {
-                self.viewModel.addContact(name: self.name, company: self.company, phone: self.phone)
+                
+                if (isAdding) {
+                    self.viewModel.addContact(name: self.name, company: self.company, phone: self.phone)
+                } else {
+                    if let contact = contact {
+                        contact.name = name
+                        contact.company = company
+                        contact.phone = phone
+                        self.viewModel.updateContact()
+                    }
+                }
+                isAdding = true
+                name = ""
+                company = ""
+                phone = ""
             } ){
-                Text("Add").frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(Color.white).cornerRadius(10)
+                Text(isAdding ? "Add":"Save").frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(Color.white).cornerRadius(10)
             }
             
             List {
                 ForEach(viewModel.contacts){ contact in
-                    Text(contact.name)
+                    Text(contact.name).onTapGesture {
+                        
+                        self.contact = contact
+                        self.name = contact.name
+                        self.company = contact.company
+                        self.phone = contact.phone
+                        self.isAdding = false
+                    }
                     
-                }
+                }.onDelete(perform: { indexSet in
+                    if let index = indexSet.first {
+                        viewModel.deleteContact(index: index)
+                    }
+                })
             }.listStyle(PlainListStyle())
         }.padding()
     }

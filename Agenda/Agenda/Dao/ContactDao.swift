@@ -18,6 +18,15 @@ struct ContactDao {
         saveContext()
     }
     
+    func delete(contact: Contact) {
+        context.delete(contact)
+        saveContext()
+    }
+    
+    func update() {
+        saveContext()
+    }
+    
     func fetchAll() -> [Contact]{
         let request = Contact.fetchAllRequest()
         do {

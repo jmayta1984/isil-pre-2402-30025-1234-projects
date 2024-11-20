@@ -22,6 +22,16 @@ class ContactListViewModel: ObservableObject {
         
     }
     
+    func deleteContact(index: Int) {
+        contactDao.delete(contact: contacts[index])
+        fetchAllContacts()
+    }
+    
+    func updateContact(){
+        contactDao.update()
+        fetchAllContacts()
+    }
+    
     private func fetchAllContacts() {
         contacts = contactDao.fetchAll()
 
