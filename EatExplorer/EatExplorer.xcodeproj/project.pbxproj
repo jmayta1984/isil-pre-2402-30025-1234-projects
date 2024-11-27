@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBA85B1F2CF79A7900E831F1 /* EatExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85B1E2CF79A7900E831F1 /* EatExplorerApp.swift */; };
+		FBA85B212CF79A7900E831F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85B202CF79A7900E831F1 /* ContentView.swift */; };
+		FBA85B232CF79A7A00E831F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA85B222CF79A7A00E831F1 /* Assets.xcassets */; };
+		FBA85B262CF79A7A00E831F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA85B252CF79A7A00E831F1 /* Preview Assets.xcassets */; };
+		FBA85B322CF79B5700E831F1 /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85B312CF79B5700E831F1 /* HttpRequestHelper.swift */; };
+		FBA85B342CF79BF800E831F1 /* RestaurantResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85B332CF79BF800E831F1 /* RestaurantResponse.swift */; };
+		FBA85B362CF79C9800E831F1 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85B352CF79C9800E831F1 /* Restaurant.swift */; };
+		FBA85B382CF79D3800E831F1 /* RestaurantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85B372CF79D3800E831F1 /* RestaurantService.swift */; };
+		FBA85B3A2CF7A0ED00E831F1 /* RestaurantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85B392CF7A0ED00E831F1 /* RestaurantListView.swift */; };
+		FBA85B3C2CF7A10500E831F1 /* RestaurantListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85B3B2CF7A10500E831F1 /* RestaurantListViewModel.swift */; };
+		FBA85B3E2CF7A5EE00E831F1 /* RestaurantListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85B3D2CF7A5EE00E831F1 /* RestaurantListItem.swift */; };
+		FBA85B402CF7ABC600E831F1 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85B3F2CF7ABC600E831F1 /* RestaurantDetailView.swift */; };
+		FBA85B432CF7AE7200E831F1 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = FBA85B422CF7AE7200E831F1 /* GoogleMaps */; };
+		FBA85B452CF7AF0E00E831F1 /* GoogleMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85B442CF7AF0E00E831F1 /* GoogleMapManager.swift */; };
+		FBA85B472CF7AF8C00E831F1 /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85B462CF7AF8C00E831F1 /* GoogleMapView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FBA85B1B2CF79A7900E831F1 /* EatExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA85B1E2CF79A7900E831F1 /* EatExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatExplorerApp.swift; sourceTree = "<group>"; };
+		FBA85B202CF79A7900E831F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBA85B222CF79A7A00E831F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBA85B252CF79A7A00E831F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBA85B312CF79B5700E831F1 /* HttpRequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
+		FBA85B332CF79BF800E831F1 /* RestaurantResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantResponse.swift; sourceTree = "<group>"; };
+		FBA85B352CF79C9800E831F1 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		FBA85B372CF79D3800E831F1 /* RestaurantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantService.swift; sourceTree = "<group>"; };
+		FBA85B392CF7A0ED00E831F1 /* RestaurantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListView.swift; sourceTree = "<group>"; };
+		FBA85B3B2CF7A10500E831F1 /* RestaurantListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewModel.swift; sourceTree = "<group>"; };
+		FBA85B3D2CF7A5EE00E831F1 /* RestaurantListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListItem.swift; sourceTree = "<group>"; };
+		FBA85B3F2CF7ABC600E831F1 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
+		FBA85B442CF7AF0E00E831F1 /* GoogleMapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapManager.swift; sourceTree = "<group>"; };
+		FBA85B462CF7AF8C00E831F1 /* GoogleMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBA85B182CF79A7900E831F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA85B432CF7AE7200E831F1 /* GoogleMaps in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBA85B122CF79A7900E831F1 = {
+			isa = PBXGroup;
+			children = (
+				FBA85B1D2CF79A7900E831F1 /* EatExplorer */,
+				FBA85B1C2CF79A7900E831F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBA85B1C2CF79A7900E831F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBA85B1B2CF79A7900E831F1 /* EatExplorer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBA85B1D2CF79A7900E831F1 /* EatExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				FBA85B302CF79AAA00E831F1 /* Helpers */,
+				FBA85B2F2CF79AA400E831F1 /* Services */,
+				FBA85B2E2CF79AA000E831F1 /* Models */,
+				FBA85B2D2CF79A9500E831F1 /* ViewModels */,
+				FBA85B2C2CF79A8F00E831F1 /* Views */,
+				FBA85B1E2CF79A7900E831F1 /* EatExplorerApp.swift */,
+				FBA85B202CF79A7900E831F1 /* ContentView.swift */,
+				FBA85B222CF79A7A00E831F1 /* Assets.xcassets */,
+				FBA85B242CF79A7A00E831F1 /* Preview Content */,
+			);
+			path = EatExplorer;
+			sourceTree = "<group>";
+		};
+		FBA85B242CF79A7A00E831F1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBA85B252CF79A7A00E831F1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBA85B2C2CF79A8F00E831F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBA85B462CF7AF8C00E831F1 /* GoogleMapView.swift */,
+				FBA85B392CF7A0ED00E831F1 /* RestaurantListView.swift */,
+				FBA85B3D2CF7A5EE00E831F1 /* RestaurantListItem.swift */,
+				FBA85B3F2CF7ABC600E831F1 /* RestaurantDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FBA85B2D2CF79A9500E831F1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FBA85B3B2CF7A10500E831F1 /* RestaurantListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FBA85B2E2CF79AA000E831F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBA85B352CF79C9800E831F1 /* Restaurant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FBA85B2F2CF79AA400E831F1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FBA85B332CF79BF800E831F1 /* RestaurantResponse.swift */,
+				FBA85B372CF79D3800E831F1 /* RestaurantService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FBA85B302CF79AAA00E831F1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FBA85B312CF79B5700E831F1 /* HttpRequestHelper.swift */,
+				FBA85B442CF7AF0E00E831F1 /* GoogleMapManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBA85B1A2CF79A7900E831F1 /* EatExplorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA85B292CF79A7A00E831F1 /* Build configuration list for PBXNativeTarget "EatExplorer" */;
+			buildPhases = (
+				FBA85B172CF79A7900E831F1 /* Sources */,
+				FBA85B182CF79A7900E831F1 /* Frameworks */,
+				FBA85B192CF79A7900E831F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EatExplorer;
+			packageProductDependencies = (
+				FBA85B422CF7AE7200E831F1 /* GoogleMaps */,
+			);
+			productName = EatExplorer;
+			productReference = FBA85B1B2CF79A7900E831F1 /* EatExplorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBA85B132CF79A7900E831F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					FBA85B1A2CF79A7900E831F1 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = FBA85B162CF79A7900E831F1 /* Build configuration list for PBXProject "EatExplorer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBA85B122CF79A7900E831F1;
+			packageReferences = (
+				FBA85B412CF7AE7200E831F1 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+			);
+			productRefGroup = FBA85B1C2CF79A7900E831F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBA85B1A2CF79A7900E831F1 /* EatExplorer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBA85B192CF79A7900E831F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA85B262CF79A7A00E831F1 /* Preview Assets.xcassets in Resources */,
+				FBA85B232CF79A7A00E831F1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBA85B172CF79A7900E831F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA85B472CF7AF8C00E831F1 /* GoogleMapView.swift in Sources */,
+				FBA85B3A2CF7A0ED00E831F1 /* RestaurantListView.swift in Sources */,
+				FBA85B452CF7AF0E00E831F1 /* GoogleMapManager.swift in Sources */,
+				FBA85B3C2CF7A10500E831F1 /* RestaurantListViewModel.swift in Sources */,
+				FBA85B3E2CF7A5EE00E831F1 /* RestaurantListItem.swift in Sources */,
+				FBA85B362CF79C9800E831F1 /* Restaurant.swift in Sources */,
+				FBA85B212CF79A7900E831F1 /* ContentView.swift in Sources */,
+				FBA85B322CF79B5700E831F1 /* HttpRequestHelper.swift in Sources */,
+				FBA85B402CF7ABC600E831F1 /* RestaurantDetailView.swift in Sources */,
+				FBA85B1F2CF79A7900E831F1 /* EatExplorerApp.swift in Sources */,
+				FBA85B382CF79D3800E831F1 /* RestaurantService.swift in Sources */,
+				FBA85B342CF79BF800E831F1 /* RestaurantResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FBA85B272CF79A7A00E831F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBA85B282CF79A7A00E831F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBA85B2A2CF79A7A00E831F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EatExplorer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.isil.EatExplorer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBA85B2B2CF79A7A00E831F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EatExplorer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.isil.EatExplorer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBA85B162CF79A7900E831F1 /* Build configuration list for PBXProject "EatExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA85B272CF79A7A00E831F1 /* Debug */,
+				FBA85B282CF79A7A00E831F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA85B292CF79A7A00E831F1 /* Build configuration list for PBXNativeTarget "EatExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA85B2A2CF79A7A00E831F1 /* Debug */,
+				FBA85B2B2CF79A7A00E831F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FBA85B412CF7AE7200E831F1 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FBA85B422CF7AE7200E831F1 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBA85B412CF7AE7200E831F1 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FBA85B132CF79A7900E831F1 /* Project object */;
+}
