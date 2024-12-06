@@ -12,15 +12,18 @@ class RestaurantDAO {
     
     func insert(restaurant: Restaurant){
         let entity = RestaurantEntity(context: context)
+        entity.id = restaurant.id
         entity.title = restaurant.title
         entity.detail = restaurant.description
         entity.poster = restaurant.poster
         saveContext()
     }
     
+    
+    
     func delete(restaurant: Restaurant) {
         let fetchRequest = RestaurantEntity.fetchAllRestaurantRequest()
-        fetchRequest.predicate = NSPredicate(format: "title == %@ ", restaurant.title)
+        fetchRequest.predicate = NSPredicate(format: "id == %@ ", restaurant.id)
         
         do {
             let items = try context.fetch(fetchRequest)
@@ -34,6 +37,21 @@ class RestaurantDAO {
             print("Error: \(error)")
         }
         
+        
+    }
+    
+    func fetchAll() -> [RestaurantEntity] {
+        let fetchRequest = RestaurantEntity.fetchAllRestaurantRequest()
+        
+        do {
+            let items = try context.fetch(fetchRequest)
+            return items
+    
+
+        } catch let error {
+            print("Error: \(error)")
+        }
+        return []
         
     }
     
