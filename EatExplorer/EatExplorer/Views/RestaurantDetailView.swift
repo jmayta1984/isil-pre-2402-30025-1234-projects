@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct RestaurantDetailView: View {
+    
+    @StateObject var viewModel = RestaurantDetailViewModel()
+    
     let restaurant: Restaurant
     var body: some View {
         NavigationStack {
@@ -30,6 +33,13 @@ struct RestaurantDetailView: View {
                     }
                     
                 )
+                
+                Image(systemName: viewModel.isFavorite ? "heart.fill" : "heart")
+        
+                    .foregroundStyle(Color.orange).onTapGesture {
+                        viewModel.isFavorite.toggle()
+                        viewModel.save(restaurant: restaurant)
+                }
                 Text(restaurant.title).bold().font(.title).foregroundStyle(Color.orange)
                 Text(restaurant.description).font(.subheadline)
                 GoogleMapView(latitude: restaurant.latitude, longitude: restaurant.longitude, zoom: 15)

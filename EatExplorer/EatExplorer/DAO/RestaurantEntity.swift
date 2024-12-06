@@ -7,12 +7,12 @@
 
 import CoreData
 
-class RestauranteEntity: NSManagedObject {
+class RestaurantEntity: NSManagedObject {
     @NSManaged var title: String
     @NSManaged var detail: String
     @NSManaged var poster: String
     
-    static func fetchAllRestaurantRequest() -> NSFetchRequest<RestauranteEntity> {
+    static func fetchAllRestaurantRequest() -> NSFetchRequest<RestaurantEntity> {
         return NSFetchRequest(entityName: "RestaurantEntity")
     }
     
