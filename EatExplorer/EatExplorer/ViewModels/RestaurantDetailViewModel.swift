@@ -8,9 +8,9 @@
 import Foundation
 
 class RestaurantDetailViewModel: ObservableObject {
+    
     @Published var isFavorite: Bool = false
     let restaurantDAO =  RestaurantDAO()
-    
     
     func save(restaurant: Restaurant) {
         isFavorite ?

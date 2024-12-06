@@ -11,13 +11,11 @@ class RestaurantDAO {
     let context = PersistenceController.shared.container.viewContext
     
     func insert(restaurant: Restaurant){
-        
         let entity = RestaurantEntity(context: context)
         entity.title = restaurant.title
         entity.detail = restaurant.description
         entity.poster = restaurant.poster
         saveContext()
-        print("Se registró")
     }
     
     func delete(restaurant: Restaurant) {
@@ -25,9 +23,9 @@ class RestaurantDAO {
         fetchRequest.predicate = NSPredicate(format: "title == %@ ", restaurant.title)
         
         do {
-            let restaurants = try context.fetch(fetchRequest)
+            let items = try context.fetch(fetchRequest)
             
-            for item in restaurants {
+            for item in items {
                 context.delete(item)
             }
             saveContext()
