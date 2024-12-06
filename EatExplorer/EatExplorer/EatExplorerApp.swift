@@ -12,7 +12,7 @@ struct EatExplorerApp: App {
     let googleMapManager = GoogleMapManager()
     var body: some Scene {
         WindowGroup {
-            RestaurantListView()
+            HomeView()
         }
     }
 }

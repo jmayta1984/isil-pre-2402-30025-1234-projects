@@ -13,7 +13,7 @@ class FavoriteListViewModel: ObservableObject {
     
     func getFavorites() {
         let favorites = restaurantDao.fetchAll().map { entity in
-            Favorite(id: entity.id, title: entity.title, description: entity.detail, poster: entity.poster)
+            Favorite(id: Int(entity.idRestaurant), title: entity.title, description: entity.detail, poster: entity.poster)
         }
         self.favorites = favorites
     }

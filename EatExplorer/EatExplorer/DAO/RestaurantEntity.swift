@@ -8,7 +8,7 @@
 import CoreData
 
 class RestaurantEntity: NSManagedObject {
-    @NSManaged var id: Int
+    @NSManaged var idRestaurant: Int16
     @NSManaged var title: String
     @NSManaged var detail: String
     @NSManaged var poster: String

@@ -45,6 +45,8 @@ struct RestaurantDetailView: View {
                 GoogleMapView(latitude: restaurant.latitude, longitude: restaurant.longitude, zoom: 15)
                 
                 Spacer()
+            }.onAppear {
+                viewModel.chechFavorite(restaurant: restaurant)
             }
         }
         .ignoresSafeArea()
