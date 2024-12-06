@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D7C77232D03426C0050E1F4 /* EatExplorerModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D7C77212D03426C0050E1F4 /* EatExplorerModel.xcdatamodeld */; };
+		9D7C77252D03449E0050E1F4 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7C77242D0344940050E1F4 /* PersistenceController.swift */; };
+		9D7C77282D03466E0050E1F4 /* RestauranteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7C77272D0346630050E1F4 /* RestauranteEntity.swift */; };
 		FBA85B1F2CF79A7900E831F1 /* EatExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85B1E2CF79A7900E831F1 /* EatExplorerApp.swift */; };
 		FBA85B212CF79A7900E831F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA85B202CF79A7900E831F1 /* ContentView.swift */; };
 		FBA85B232CF79A7A00E831F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA85B222CF79A7A00E831F1 /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D7C77222D03426C0050E1F4 /* EatExplorerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EatExplorerModel.xcdatamodel; sourceTree = "<group>"; };
+		9D7C77242D0344940050E1F4 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		9D7C77272D0346630050E1F4 /* RestauranteEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteEntity.swift; sourceTree = "<group>"; };
 		FBA85B1B2CF79A7900E831F1 /* EatExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA85B1E2CF79A7900E831F1 /* EatExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatExplorerApp.swift; sourceTree = "<group>"; };
 		FBA85B202CF79A7900E831F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D7C77262D0346520050E1F4 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				9D7C77272D0346630050E1F4 /* RestauranteEntity.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
 		FBA85B122CF79A7900E831F1 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +87,7 @@
 		FBA85B1D2CF79A7900E831F1 /* EatExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				9D7C77262D0346520050E1F4 /* DAO */,
 				FBA85B302CF79AAA00E831F1 /* Helpers */,
 				FBA85B2F2CF79AA400E831F1 /* Services */,
 				FBA85B2E2CF79AA000E831F1 /* Models */,
@@ -82,6 +97,7 @@
 				FBA85B202CF79A7900E831F1 /* ContentView.swift */,
 				FBA85B222CF79A7A00E831F1 /* Assets.xcassets */,
 				FBA85B242CF79A7A00E831F1 /* Preview Content */,
+				9D7C77212D03426C0050E1F4 /* EatExplorerModel.xcdatamodeld */,
 			);
 			path = EatExplorer;
 			sourceTree = "<group>";
@@ -133,6 +149,7 @@
 		FBA85B302CF79AAA00E831F1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9D7C77242D0344940050E1F4 /* PersistenceController.swift */,
 				FBA85B312CF79B5700E831F1 /* HttpRequestHelper.swift */,
 				FBA85B442CF7AF0E00E831F1 /* GoogleMapManager.swift */,
 			);
@@ -216,9 +233,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBA85B472CF7AF8C00E831F1 /* GoogleMapView.swift in Sources */,
+				9D7C77252D03449E0050E1F4 /* PersistenceController.swift in Sources */,
 				FBA85B3A2CF7A0ED00E831F1 /* RestaurantListView.swift in Sources */,
 				FBA85B452CF7AF0E00E831F1 /* GoogleMapManager.swift in Sources */,
 				FBA85B3C2CF7A10500E831F1 /* RestaurantListViewModel.swift in Sources */,
+				9D7C77282D03466E0050E1F4 /* RestauranteEntity.swift in Sources */,
 				FBA85B3E2CF7A5EE00E831F1 /* RestaurantListItem.swift in Sources */,
 				FBA85B362CF79C9800E831F1 /* Restaurant.swift in Sources */,
 				FBA85B212CF79A7900E831F1 /* ContentView.swift in Sources */,
@@ -226,6 +245,7 @@
 				FBA85B402CF7ABC600E831F1 /* RestaurantDetailView.swift in Sources */,
 				FBA85B1F2CF79A7900E831F1 /* EatExplorerApp.swift in Sources */,
 				FBA85B382CF79D3800E831F1 /* RestaurantService.swift in Sources */,
+				9D7C77232D03426C0050E1F4 /* EatExplorerModel.xcdatamodeld in Sources */,
 				FBA85B342CF79BF800E831F1 /* RestaurantResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +469,19 @@
 			productName = GoogleMaps;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		9D7C77212D03426C0050E1F4 /* EatExplorerModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D7C77222D03426C0050E1F4 /* EatExplorerModel.xcdatamodel */,
+			);
+			currentVersion = 9D7C77222D03426C0050E1F4 /* EatExplorerModel.xcdatamodel */;
+			path = EatExplorerModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FBA85B132CF79A7900E831F1 /* Project object */;
 }

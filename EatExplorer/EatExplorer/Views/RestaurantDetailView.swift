@@ -17,12 +17,12 @@ struct RestaurantDetailView: View {
                     content: { image in
                         image.resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: .infinity, height: 400)
+                            .frame(width: nil, height: 400)
                             .clipShape(RoundedRectangle(cornerRadius: 100))
                     },
                     placeholder: {
                         ZStack {
-                            RoundedRectangle(cornerRadius: 25).fill(Color.gray.opacity(0.2))                        .frame(width: .infinity, height: 400)
+                            RoundedRectangle(cornerRadius: 25).fill(Color.gray.opacity(0.2))                        .frame(width: nil, height: 400)
                             ProgressView()
                             
                             
