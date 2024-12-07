@@ -10,6 +10,6 @@ import GoogleMaps
 
 class GoogleMapManager {
     init (){
-        GMSServices.provideAPIKey("AIzaSyAbPraUW_tBzGEhQrSuvyUXjxD1Ds3u96o")
+        GMSServices.provideAPIKey("YOUR API KEY HERE")
     }
 }
