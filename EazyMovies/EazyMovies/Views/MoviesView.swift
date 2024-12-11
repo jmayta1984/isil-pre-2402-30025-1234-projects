@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MoviesView: View {
     
     init() {
-        UINavigationBar.appearance().largeTitleTextAttributes = [:]
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.orange]
     }
     
-    let categories = ["Popular", "Upcoming", "Top rated"]
-    @State var selectedCategory = "Popular"
+    let categories = ["Popular", "Upcoming", "Top rated", "Now playing"]
+    
+    @StateObject var viewModel = MovieListViewModel()
     
     var body: some View {
         NavigationStack {
@@ -23,15 +24,15 @@ struct ContentView: View {
                     HStack {
                         ForEach(categories, id: \.self) { category in
                             Text(category)
-                                .foregroundStyle( selectedCategory == category ? Color.orange : Color.gray )
+                                .foregroundStyle( viewModel.selectedCategory == category ? Color.orange : Color.gray )
                                 .onTapGesture {
-                                selectedCategory = category
+                                    viewModel.updateCategory(category: category)
                             }
                         }
                     }
                     
                 }
-                MovieListView()
+                MovieListView(viewModel: viewModel)
                 Spacer()
             }
             .padding()
@@ -42,5 +43,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MoviesView()
 }

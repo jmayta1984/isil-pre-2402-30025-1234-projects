@@ -9,30 +9,14 @@ import SwiftUI
 
 struct MovieListView: View {
     
-    @StateObject var viewModel = MovieListViewModel()
+    @ObservedObject var viewModel: MovieListViewModel
     
     var body: some View {
         List {
             ForEach(viewModel.movies) { movie in
-                HStack {
-                    AsyncImage(
-                        url: URL(string: movie.poster),
-                        content: { image in
-                            image
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 90, height: 135)
-                                .clipShape(RoundedRectangle(cornerRadius: 10))
-                        },
-                        placeholder: {
-                            ProgressView()
-                                .frame(width: 90, height: 135)
-                        }
-                        
-                    )
-                    Text(movie.title)
-                    
-                }
+                
+                MovieListItemView(movie: movie)
+                
             }
             .listRowSeparator(.hidden)
             
@@ -45,5 +29,5 @@ struct MovieListView: View {
 }
 
 #Preview {
-    MovieListView()
+    MovieListView(viewModel: MovieListViewModel())
 }

@@ -9,9 +9,9 @@ import Foundation
 
 class MovieService {
     
-    func getMovies(completion: @escaping ([Movie]?, String?) -> Void ) {
+    func getMovies(endpoint: String, completion: @escaping ([Movie]?, String?) -> Void ) {
         
-        let url = "https://api.themoviedb.org/3/movie/popular?api_key=3cae426b920b29ed2fb1c0749f258325"
+        let url = "https://api.themoviedb.org/3/movie/\(endpoint)?api_key=3cae426b920b29ed2fb1c0749f258325"
         HttpRequestHelper().GET(url: url) { success, data, message in
             if success {
                 guard let data = data else {
